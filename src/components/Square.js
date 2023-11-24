@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 
-const Square = () => {
-  return <div className="square">X</div>;
+const Square = (props) => {
+  return (
+    <button className="square" onClick={props.onClickEvent}>
+      {props.value}
+    </button>
+  );
 };
 
 export default Square;
